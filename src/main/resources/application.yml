@@ -4,6 +4,7 @@ info:
     company: hhj
 
 management:
+
   # Info
   info:
     java:
@@ -26,3 +27,7 @@ management:
       exposure:
         include: "*"
         exclude: "env,beans"
+
+logging:
+  level:
+    kr.co.monitoring.presentation: debug
