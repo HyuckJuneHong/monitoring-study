@@ -5,6 +5,10 @@ info:
 
 management:
 
+  # Server
+  server:
+    port: 8080
+
   # Info
   info:
     java:
@@ -15,7 +19,7 @@ management:
       enabled: true
     git:
       mode: full
-  
+
   # End Point
   endpoint:
     health:

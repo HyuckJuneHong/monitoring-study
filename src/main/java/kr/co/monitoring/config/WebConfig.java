@@ -1,0 +1,14 @@
+package kr.co.monitoring.config;
+
+import org.springframework.boot.actuate.web.exchanges.InMemoryHttpExchangeRepository;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class WebConfig {
+
+	@Bean
+	public InMemoryHttpExchangeRepository httpExchangeRepository() {
+		return new InMemoryHttpExchangeRepository();
+	}
+}
