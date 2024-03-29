@@ -1,1 +1,26 @@
-spring.application.name=monitoring
+info:
+  app:
+    name: hello-actuator
+    company: hhj
+
+management:
+  # Info
+  info:
+    java:
+      enabled: true
+    os:
+      enabled: true
+    env:
+      enabled: true
+
+  # End Point
+  endpoint:
+    health:
+      show-components: always
+
+  # End Points
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,beans"
